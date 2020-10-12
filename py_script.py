@@ -21,6 +21,8 @@ sw_vehicles = requests.get('https://swapi.dev/api/vehicles').text
 #     f.write(sw_starships)
 # with open('starwars_vehicles.json', 'w') as f:
 #     f.write(sw_vehicles)
+# print('Files written successfully.')
+
 
 # Finance API to eventually use NumPy and Pandas.
 income_url = "https://financial-modeling-prep.p.rapidapi.com/income-statement/AAPL"
@@ -50,6 +52,4 @@ profile = requests.request(
 #     f.write(cashflow.text)
 # with open('profiles.json', 'w') as f:
 #     f.write(profile.text)
-
-# print(response.text)
-print('Files written successfully.')
+# print('Files written successfully.')
