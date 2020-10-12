@@ -3,6 +3,7 @@ import re
 import requests
 import numpy as np
 import pandas as pd
+import keyfile
 
 # Testing requests with Star Wars api.
 sw_people = requests.get('https://swapi.dev/api/people').text
@@ -33,7 +34,7 @@ profile_url = "https://financial-modeling-prep.p.rapidapi.com/profile/AAPL"
 querystring = {"apikey": "demo"}
 headers = {
     'x-rapidapi-host': "financial-modeling-prep.p.rapidapi.com",
-    'x-rapidapi-key': "d422a4a1dcmshd6c8499bf09c36fp11ea4cjsneab8dfc1c506"
+    'x-rapidapi-key': keyfile.key
 }
 income = requests.request(
     "GET", income_url, headers=headers, params=querystring)
