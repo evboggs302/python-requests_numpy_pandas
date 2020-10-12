@@ -13,6 +13,14 @@
   4.  create a new venv pointing to `venv/bin/python3`
   5.  run the command `python3 -m venv --upgrade YOUR_VENV_DIRECTORY`
 
+_Insight was gained from this [article](https://towardsdatascience.com/virtual-environments-104c62d48c54)_
+
 ---
 
-_A lot of help was gained from this [article](https://towardsdatascience.com/virtual-environments-104c62d48c54)_
+# Requests Library
+
+# Context Managers
+
+# NumPy
+
+# Pandas
