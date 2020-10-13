@@ -1,27 +1,26 @@
-
-import re
-import requests
-import numpy as np
-import pandas as pd
 import keyfile
+import pandas as pd
+import numpy as np
+import requests
+import re
 
 # Testing requests with Star Wars api.
-sw_people = requests.get('https://swapi.dev/api/people').text
-sw_films = requests.get('https://swapi.dev/api/films').text
-sw_planets = requests.get('https://swapi.dev/api/planets').text
-sw_starships = requests.get('https://swapi.dev/api/starships').text
-sw_vehicles = requests.get('https://swapi.dev/api/vehicles').text
-# USE CONTEXT MANAGERS TO WRITE TO FILES - they automatically close the file after completed action
-# with open('starwars_people.json', 'w') as f:
-#     f.write(sw_people)
+sw_people = requests.get('https://swapi.dev/api/people/?page=9').text
+# sw_films = requests.get('https://swapi.dev/api/films').text
+# sw_planets = requests.get('https://swapi.dev/api/planets').text
+# sw_starships = requests.get('https://swapi.dev/api/starships').text
+# sw_vehicles = requests.get('https://swapi.dev/api/vehicles').text
+# USE CONTEXT MANAGERS TO WRITE TO FILES - they automatically close dependencies after completed action
+with open('starwars_people.json', 'a') as f:
+    f.write(sw_people.encode('utf-8'))
 # with open('starwars_films.json', 'w') as f:
-#     f.write(sw_films)
+#     f.write(sw_films.encode('utf-8'))
 # with open('starwars_planets.json', 'w') as f:
-#     f.write(sw_planets)
+#     f.write(sw_planets.encode('utf-8'))
 # with open('starwars_starships.json', 'w') as f:
-#     f.write(sw_starships)
+#     f.write(sw_starships.encode('utf-8'))
 # with open('starwars_vehicles.json', 'w') as f:
-#     f.write(sw_vehicles)
+#     f.write(sw_vehicles.encode('utf-8'))
 # print('Files written successfully.')
 
 
