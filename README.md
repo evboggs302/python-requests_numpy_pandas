@@ -34,7 +34,7 @@ _Insight was gained from this [article](https://towardsdatascience.com/virtual-e
   ```py
   from contextlib import contextmanager
   ```
-- Using with effectively can help you avoid resource leaks and make your code easier to read.
+- Using `with` effectively can help avoid resource leaks and make code easier to read.
 
 ---
 
