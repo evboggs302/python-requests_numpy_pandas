@@ -27,6 +27,7 @@ _Insight was gained from this [article](https://towardsdatascience.com/virtual-e
 # Context Managers
 
 - Context managers spin up the needed resources for the operation at hand, and then **automatically closes** those resources after completion. This is why the `.close()` method isn't required.
+- Using `with` effectively can help avoid resource leaks and make code easier to read.
 - Using context managers with file operations is a common use case, but there are other uses that make sense.
   - Connecting to a DataBase
   - Lock objects in threading
@@ -34,7 +35,6 @@ _Insight was gained from this [article](https://towardsdatascience.com/virtual-e
   ```py
   from contextlib import contextmanager
   ```
-- Using `with` effectively can help avoid resource leaks and make code easier to read.
 
 ---
 
