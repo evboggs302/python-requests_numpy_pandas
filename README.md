@@ -19,9 +19,22 @@ _Insight was gained from this [article](https://towardsdatascience.com/virtual-e
 
 # Requests Library
 
+- Dyanmic URL parameters can be achieved using either an `F-String` or the `format()` method.
+- Default encoding will be the default encoding of your virtual environment. If one isn't set, unicode will be used. (This is why I specified the encoding when writing to the file.)
+
 ---
 
 # Context Managers
+
+- Context managers spin up the needed resources for the operation at hand, and then **automatically closes** those resources after completion. This is why the `.close()` method isn't required.
+- Using context managers with file operations is a common use case, but there are other uses that make sense.
+  - Connecting to a DataBase
+  - Lock objects in threading
+  - Custom conext management classes using the `contextlib`
+  ```py
+  from contextlib import contextmanager
+  ```
+- Using with effectively can help you avoid resource leaks and make your code easier to read.
 
 ---
 
