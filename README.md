@@ -6,13 +6,13 @@
    - Now when you use `pip install <package>` it will install that package to the virtual environment for use.
 
 - If you start getting a `unresolved import` error in your script, you will need to select a different Python interpretor.
-    - There should be multiple options to select from, but the one I've found the most success with is the `"venv/bin/python3.9"` interpreter.
+  - There should be multiple options to select from, but the one I've found the most success with is the `"venv/bin/python3.9"` interpreter.
 - If you need to update the version of python:
-  1.  download from the official python website
-  2.  deactivate the current virtual environmnet
-  3.  remove the venv directory from your project
-  4.  create a new venv pointing to `venv/bin/python3`
-  5.  run the command `python3 -m venv --upgrade YOUR_VENV_DIRECTORY`
+  1.  Download from the official python website
+  2.  Deactivate the current virtual environmnet
+  3.  Remove the venv directory from your project
+  4.  Create a new venv pointing to `venv/bin/python3`
+  5.  Run the command `python3 -m venv --upgrade YOUR_VENV_DIRECTORY`
 
 _Insight was gained from this [article](https://towardsdatascience.com/virtual-environments-104c62d48c54)._
 
