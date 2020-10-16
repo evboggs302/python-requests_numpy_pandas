@@ -5,7 +5,7 @@
 3. Next, "activate" the virtual environment using the command `source venv/bin/activate`
    - Now when you use `pip install <package>` it will install that package to the virtual environment for use.
 
-- If you start getting a `unresolved import` error in your script, you will need to select a different Python interpretor.
+- If you start getting a `unresolved import ____` or `unable to import ____` error in your script, you will need to select a different Python interpretor.
   - There should be multiple options to select from, but the one I've found the most success with is the `"venv/bin/python3.9"` interpreter.
 - If you need to update the version of python:
   1.  Download from the official python website
