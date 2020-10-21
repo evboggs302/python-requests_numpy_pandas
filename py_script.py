@@ -56,10 +56,13 @@ profile = requests.request(
 # print('Files written successfully.')
 
 # NUMPY AND PANDS MANIPULATION
-# peeps = pd.read_json("./starwars_people.json")
-# peep_data = []
-# for x in peeps.res:
-#     peep_data += x['results']
-# peep_df = pd.DataFrame(peep_data)
+peeps = pd.read_json("./starwars_people.json")
+peep_data = []
+for x in peeps.res:
+    peep_data += x['results']
+peep_df = pd.DataFrame(peep_data)
 # peep_df.to_csv(path_or_buf='./sw_peeps.csv', index=False, encoding='utf-8')
-print(('---- Hello Nicki ----'))
+print(peep_df.head())
+
+
+print('\n---- FILE FINISHED ----')
